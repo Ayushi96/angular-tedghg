@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
+navigateToCart(){
+this.router.navigateByUrl('/cart');
+}
+constructor (private router: Router){
 
+}
 }
 
 
